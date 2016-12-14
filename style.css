@@ -1,0 +1,112 @@
+html {
+    width: 590px;
+    height: 400px;
+}
+
+body {
+    width: 570px;
+	height: 400px;
+    font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+p {
+    text-align: justify;
+    font-size: 11px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+img {
+    float: left;
+    height: 48px;
+    margin-top: 1px;
+}
+
+th {
+    border-bottom: 1px solid #d6d6d6;
+    color: #55748E;
+    background: #dde1e9;
+}
+
+tr:nth-child(even) {
+    background: #dde1e9;
+}
+
+#titulo {
+    font-size: 20px;
+    padding-left: 60px;
+    margin-top: 0;
+}
+
+.subt {
+    position: relative;
+    display: inline-table;
+    width: 100%;
+}
+
+#subtitulo {
+    font-size: 16px;
+    float: left;
+    margin: 0 auto;
+    color: #55748E;
+}
+
+#about{
+    float: right;
+    padding: 0;
+    height: 16px;
+}
+
+#select {
+    float: left;
+    margin-top: 2px;
+}
+
+#search {
+    float: right;
+    padding: 0;
+}
+
+#lupa {
+    float: right;
+    height: 16px;
+    margin: 2px 4px;
+}
+
+.codigo {
+    width: 40px;
+    text-align: left;
+}
+
+.UC {
+    width: 300px;
+}
+
+.normal {
+    width: 110px;
+    text-align: center;
+}
+
+.recurso {
+    width: 110px;
+    text-align: center;
+}
+
+.mono {
+    font-family: 'Andale Mono', AndaleMono, monospace;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+#footer {
+    margin-bottom: 10px;
+}
