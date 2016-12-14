@@ -1,4 +1,4 @@
-# calendario_uab
+Calendário UAb
 
 Calendário de Provas Presenciais da Licenciatura em Informática 2016-2017 da Universidade Aberta
 
