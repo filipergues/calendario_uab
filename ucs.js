@@ -21,11 +21,19 @@ var ucs_1_semestre = [
 ];
 
 var ucs_2_semestre = [
-
 	['21037','Elementos de Probabilidades e Estatística','07-06-2019','T','12-09-2019','M','1ºano'],
 	['21082','Matemática Finita','19-06-2019','T','23-09-2019','M','1ºano'],
 	['21111','Sistemas Operativos','02-07-2019','T','30-09-2019','M','1ºano'],
 	['21177','Modelação de Sistemas de Informação','27-06-2019','M','26-09-2019','M','1ºano'],
 	['21178','Laboratório de Programação','12-06-2019','M','18-09-2019','M','1ºano'],
-
+	['21046','Estruturas de Dados e Algoritmos Fundamentais','08-07-2019','M','06-09-2019','M','2ºano'],
+	['21071','Introdução à Inteligência Artificial','03-06-2019','T','13-09-2019','M','2ºano'],
+	['21076','Investigação Operacional','11-06-2019','T','16-09-2019','M','2ºano'],
+	['21077','Linguagens de Programação','28-06-2019','T','27-09-2019','T','2ºano'],
+	['21179','Laboratório de Desenvolvimento de Software','17-06-2019','T','19-09-2019','T','2ºano'],
+	['21018','Compilação','06-06-2019','M','11-09-2019','T','3ºano'],
+	['21097','Raciocínio e Representação do Conhecimento','03-07-2019','T','26-09-2019','T','3ºano'],
+	['21108','Sistemas Distribuídos','26-06-2019','T','30-09-2019','T','3ºano'],
+	['21182','Laboratório de Sistemas e Serviços Web','09-07-2019','T','18-09-2019','T','3ºano'],
+	['21184','Projeto de Engenharia Informática','***','*','***','*','3ºano']
 ];
