@@ -13,6 +13,7 @@ $(document).ready(function () {
         "<td><a href='http://wiki.dcet.uab.pt/files/index.php/" + ucs_1_semestre[i][1] + "' target='_blank'>" + ucs_1_semestre[i][1] + "</a></td>" +
         "<td class='normal'>" + ucs_1_semestre[i][2] + "<span class='mono'>" + " " + ucs_1_semestre[i][3] + "</span></td>" +
         "<td class='recurso'>" + ucs_1_semestre[i][4] + "<span class='mono'>" + " " + ucs_1_semestre[i][5] + "</span></td>" +
+		"<td class='ano'>" + ucs_1_semestre[i][6] + "</td>" +
         "</tr>";
     }
     
@@ -25,6 +26,7 @@ $(document).ready(function () {
         "<td><a href='http://wiki.dcet.uab.pt/files/index.php/" + ucs_2_semestre[i][1] + "' target='_blank'>" + ucs_2_semestre[i][1] + "</a></td>" +
         "<td class='normal'>" + ucs_2_semestre[i][2] + "<span class='mono'>" + " " + ucs_2_semestre[i][3] + "</span></td>" +
         "<td class='recurso'>" + ucs_2_semestre[i][4] + "<span class='mono'>" + " " + ucs_2_semestre[i][5] + "</span></td>" +
+		"<td class='ano'>" + ucs_2_semestre[i][6] + "</td>" +
         "</tr>";
     }
     

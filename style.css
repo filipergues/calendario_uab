@@ -87,6 +87,11 @@ tr:nth-child(even) {
     text-align: left;
 }
 
+.ano {
+    width: 40px;
+    text-align: center;
+}
+
 .UC {
     width: 300px;
 }
