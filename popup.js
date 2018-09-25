@@ -89,12 +89,20 @@ $(document).ready(function () {
 
     // Filtra em tempo real as UC's à medida que se vai escrevendo na caixa de pesquisa
     // Converte letras acentuadas em não acentuadas para facilitar pesquisa
-    var $rows = $('tbody tr');
+    // cp - filtra apenas as tabelas dos exames
+    var $rows1 = $('#primeiroSemestre tr');
+    var $rows2= $('#segundoSemestre tr');
     $('#search').keyup(function () {
         document.getElementById('select').checked = false;
 
         var val = $.trim($(this).val()).replace(/ +/g, ' ').latinise().toLowerCase();
-            $rows.show().filter(function () {
+
+        $rows1.show().filter(function () {
+            var text = $(this).text().replace(/\s+/g, ' ').latinise().toLowerCase();
+            return !~text.indexOf(val);
+        }).hide();
+
+        $rows2.show().filter(function () {
             var text = $(this).text().replace(/\s+/g, ' ').latinise().toLowerCase();
             return !~text.indexOf(val);
         }).hide();
