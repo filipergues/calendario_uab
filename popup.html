@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="jquery.js"></script>
         <script src="ucs.js"></script>
+        <script src="calendar.js"></script>
         <script src="latinise_compact.js"></script>
         <script src="popup.js"></script>
     </head>
@@ -86,6 +87,28 @@
                     </table>
                     <hr class='segundo' color='#d6d6d6' size='1'>
                 </div>
+
+                <div id='calendario'>
+                    <h3 class='calendario'>Calendário Lectivo</h3>
+                    <table class='calendario'>
+                        <thead class='calendario'>
+                            <tr>
+                                <th class='calendar_description'>Descrição</th>
+                                <th class='calendar_begin'>Data de inicio</th>
+								<th class='calendar_end'>Data de fim</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody id="calendario_tbody">
+                            
+                            <!-- Tabela de UC's do segundo semestre -->
+                                
+                        </tbody>
+                    </table>
+                    <hr class='calendario' color='#d6d6d6' size='1'>
+                </div>
+
+
                 <p id="footer">As datas apresentadas foram extraídas do
                   calendário oficial, não podendo nunca deixar de ser
                   confirmadas com a versão original, disponível na página

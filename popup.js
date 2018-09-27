@@ -30,6 +30,16 @@ $(document).ready(function () {
         "</tr>";
     }
 
+        // Calendario escolar
+    for (i = 0; i < academic_calendar.length; i++) {
+        document.getElementById("calendario_tbody").innerHTML +=
+        "<tr class='linhas' id='" + academic_calendar[i][0] + "'>" +
+        "<td class='codigo'>" + academic_calendar[i][0] + "</td>" +
+        "<td class='normal'>" + academic_calendar[i][1] +
+        "<td class='recurso'>" + academic_calendar[i][2] +
+        "</tr>";
+    }
+
     // Checkbox "Ver apenas UC's seleccionada"
     // Esconde uc's não seleccionada
     // Esconde titulo e headers da tabela caso nenhuma uc's desse semestre esteja seleccionado

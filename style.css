@@ -123,6 +123,14 @@ table.buttonlist {
     margin-right:auto;
 }
 
+table.calendario {
+    padding: 10px 10px;
+    margin-left:auto; 
+    margin-right:auto;
+    white-space: nowrap;
+}
+
+
 button.buttonlist {
     background-color: #55748E;
     border: none;
