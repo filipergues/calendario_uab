@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+    $("#botao1").click(function(){
+        window.open(info_button1.url,'_blank');
+    });
+
+    $("#botao2").click(function(){
+        window.open(info_button2.url,'_blank');
+    });
+
+    $("#botao3").click(function(){
+        window.open(info_button3.url,'_blank');
+    });
+    
+
     // Substitui o ano no titulo html pela variavel ano do ucs.js
     document.getElementById("ano").innerHTML = ano;
 
@@ -10,7 +23,7 @@ $(document).ready(function () {
         "<tr class='linhas' id='" + ucs_1_semestre[i][0] + "'>" +
         "<td><input type='checkbox' class='favoritos' id='checkbox" + ucs_1_semestre[i][0] + "'></td>" +
         "<td class='codigo'>" + ucs_1_semestre[i][0] + "</td>" +
-        "<td><a href='http://wiki.dcet.uab.pt/files/index.php/" + ucs_1_semestre[i][1] + "' target='_blank'>" + ucs_1_semestre[i][1] + "</a></td>" +
+        "<td><a href='" + ucs_1_semestre[i][7] + "' target='_blank'>" + ucs_1_semestre[i][1] + "</a></td>" +
         "<td class='normal'>" + ucs_1_semestre[i][2] + "<span class='mono'>" + " " + ucs_1_semestre[i][3] + "</span></td>" +
         "<td class='recurso'>" + ucs_1_semestre[i][4] + "<span class='mono'>" + " " + ucs_1_semestre[i][5] + "</span></td>" +
 		    "<td class='ano'>" + ucs_1_semestre[i][6] + "</td>" +
@@ -23,7 +36,7 @@ $(document).ready(function () {
         "<tr class='linhas' id='" + ucs_2_semestre[i][0] + "'>" +
         "<td><input type='checkbox' class='favoritos' id='checkbox" + ucs_2_semestre[i][0] + "'></td>" +
         "<td class='codigo'>" + ucs_2_semestre[i][0] + "</td>" +
-        "<td><a href='http://wiki.dcet.uab.pt/files/index.php/" + ucs_2_semestre[i][1] + "' target='_blank'>" + ucs_2_semestre[i][1] + "</a></td>" +
+        "<td><a href='" + ucs_2_semestre[i][7] + "' target='_blank'>" + ucs_2_semestre[i][1] + "</a></td>" +
         "<td class='normal'>" + ucs_2_semestre[i][2] + "<span class='mono'>" + " " + ucs_2_semestre[i][3] + "</span></td>" +
         "<td class='recurso'>" + ucs_2_semestre[i][4] + "<span class='mono'>" + " " + ucs_2_semestre[i][5] + "</span></td>" +
 		    "<td class='ano'>" + ucs_2_semestre[i][6] + "</td>" +
@@ -181,3 +194,4 @@ function desactivarTitulo () {
             $('.segundo').show();
         }
 }
+

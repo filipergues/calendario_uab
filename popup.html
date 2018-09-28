@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Calendário de Provas Presenciais da Licenciatura em Engenharia Informática 2018-2019 da Universidade Aberta</title>
+        <title>Calendário Lectivo & Provas Presenciais da Licenciatura em Engenharia Informática 2018-2019 da Universidade Aberta</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="jquery.js"></script>
@@ -11,10 +11,11 @@
         <script src="popup.js"></script>
     </head>
     <body>
+
         <div class="popup">
             <div class="header">
                 <img src="icon.png">
-                <h1 id="titulo">Calendário de Provas Presenciais<br><span id="ano"></span></h1>
+                <h1 id="titulo">Calendário Lectivo & Provas Presenciais<br><span id="ano"></span></h1>
             </div>
             <div class="main">
                 <div class="subt">
@@ -26,7 +27,7 @@
                 <div class="subt">
                     <form>
                         <input type='checkbox' id='select' name="select" value="select" tabindex="1"><span style="color:#55748E; font-weight:bold;"> Ver apenas UC's seleccionadas</span>
-                        <input type="text" id="search" placeholder="Procurar" autocomplete="off">
+                        <input type="text" id="search" placeholder="Procurar UC" autocomplete="off">
                         <img src="lupa.png" id="lupa">
                     </form>
                 </div>
@@ -35,9 +36,9 @@
                 <div class="buttonlist">
                     <table class="buttonlist">
                         <tr>
-                            <td><button class="buttonlist" type="button">Click Me!</button></td>
-                            <td><button class="buttonlist" type="button">Click Me!</button></td>
-                            <td><button class="buttonlist" type="button">Click Me!</button></td>
+                            <td><button id="botao1" class="buttonlist" type="button">Portal</button></td>
+                            <td><button id="botao2" class="buttonlist" type="button">Moodle</button></td>
+                            <td><button id="botao3" class="buttonlist" type="button">Wiki</button></td>
                         </tr>
                     </table>
                 </div>
@@ -109,11 +110,24 @@
                 </div>
 
 
-                <p id="footer">As datas apresentadas foram extraídas do
-                  calendário oficial, não podendo nunca deixar de ser
-                  confirmadas com a versão original, disponível na página
-                  <a href="http://portal.uab.pt/avaliacao/" target="_blank">"Exames"</a> do sítio web da UAb.<br>
-                  Ultima atualização do documento em: <span id="actualizado">23 julho 2018</span></p>
+                <table>
+                    <td>
+                        <p id="footer">
+                            <button id="botao_redefinir" type="button">Redefinir Botões</button>
+                        </p>
+                        </td>
+                    <td>
+                        <p id="footer">As datas apresentadas foram extraídas dos
+                            calendários oficiais, não podendo nunca deixar de ser
+                            confirmadas com as versões originais, disponíveis nas páginas
+                            <a href="http://portal.uab.pt/avaliacao/" target="_blank">"Exames"</a> e
+                            <a href="http://portal.uab.pt/calendario-letivo/" target="_blank">"Calendário Lectivo"</a></a> do sítio web da UAb.</p>
+                    </td>
+                </table>
+                
+                <p id="footer">
+                    Ultima atualização do documento em: <span id="actualizado">23 julho 2018</span></p>
+
             </div>
         </div>
     </body>
