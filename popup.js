@@ -16,6 +16,10 @@ $(document).ready(function () {
     $("#botao4").click(function(){
         window.open(info_button4.url,'_blank');
     });
+
+    $("#botao5").click(function(){
+        window.open(info_button5.url,'_blank');
+    });
     
     //botao que redefine os nomes e url dos botões
     $("#botao_redefinir").click(function(){
@@ -266,6 +270,20 @@ function load_buttons_information() {
         }
     });
 
+    chrome.storage.sync.get(['info_button5_nome'], function(val) {
+        if (!val.info_button5_nome) {
+        } else {
+            info_button5.nome=val.info_button5_nome;
+        }
+        $('#botao5').html(val.info_button5_nome);
+    });
+    chrome.storage.sync.get(['info_button5_url'], function(val) {
+        if(!val.info_button5_url) {
+        } else {
+            info_button5.url=val.info_button5_url;
+        }
+    });
+
 
 }
 
@@ -305,6 +323,13 @@ function set_buttons_information() {
     chrome.storage.sync.set({'info_button4_url':info}, function() {
     });
 
+    info = window.prompt("Insira nome para o botao5","Office 365 UAB");
+    chrome.storage.sync.set({'info_button5_nome':info}, function() {
+    });
+
+    info = window.prompt("Insira URL para o botao5","https://login.microsoftonline.com/");
+    chrome.storage.sync.set({'info_button5_url':info}, function() {
+    });
     load_buttons_information();
 
 }
