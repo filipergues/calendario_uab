@@ -115,3 +115,29 @@ tr:nth-child(even) {
 #footer {
     margin-bottom: 10px;
 }
+
+
+table.buttonlist {
+    padding: 10px 10px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table.calendario {
+    padding: 10px 10px;
+    margin-left:auto; 
+    margin-right:auto;
+    white-space: nowrap;
+}
+
+
+button.buttonlist {
+    background-color: #55748E;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
