@@ -3,6 +3,7 @@ var ano = "2018-2019";
 var info_button1={nome:"Portal", url:"https://portal.uab.pt/"};
 var info_button2={nome:"Moodle", url:"https://elearning.uab.pt/"};
 var info_button3={nome:"Wiki", url:"https://wiki.dcet.uab.pt/"};
+var info_button4={nome:"Rocket Chat", url:"https://chat.estudarnauab.pt/home"};
 
 var ucs_1_semestre = [
   ['21002','Álgebra Linear I','18-02-2019','M','26-07-2019','M','1ºano','https://wiki.dcet.uab.pt/files/index.php/%C3%81lgebra_Linear_I'],

@@ -12,6 +12,10 @@ $(document).ready(function () {
     $("#botao3").click(function(){
         window.open(info_button3.url,'_blank');
     });
+
+    $("#botao4").click(function(){
+        window.open(info_button4.url,'_blank');
+    });
     
     //botao que redefine os nomes e url dos botões
     $("#botao_redefinir").click(function(){
@@ -208,7 +212,6 @@ function load_buttons_information() {
 
     chrome.storage.sync.get(['info_button1_nome'], function(val) {
         if (!val.info_button1_nome) {
-            info_button1.nome='Portal';
         } else {
             info_button1.nome=val.info_button1_nome;
         }
@@ -216,11 +219,53 @@ function load_buttons_information() {
     });
     chrome.storage.sync.get(['info_button1_url'], function(val) {
         if(!val.info_button1_url) {
-            info_button1.url='https://portal.uab.pt/';
         } else {
             info_button1.url=val.info_button1_url;
         }
     });
+
+    chrome.storage.sync.get(['info_button2_nome'], function(val) {
+        if (!val.info_button2_nome) {
+        } else {
+            info_button2.nome=val.info_button2_nome;
+        }
+        $('#botao2').html(val.info_button2_nome);
+    });
+    chrome.storage.sync.get(['info_button2_url'], function(val) {
+        if(!val.info_button2_url) {
+        } else {
+            info_button2.url=val.info_button2_url;
+        }
+    });
+
+    chrome.storage.sync.get(['info_button3_nome'], function(val) {
+        if (!val.info_button3_nome) {
+        } else {
+            info_button3.nome=val.info_button3_nome;
+        }
+        $('#botao3').html(val.info_button3_nome);
+    });
+    chrome.storage.sync.get(['info_button3_url'], function(val) {
+        if(!val.info_button3_url) {
+        } else {
+            info_button3.url=val.info_button3_url;
+        }
+    });
+
+    chrome.storage.sync.get(['info_button4_nome'], function(val) {
+        if (!val.info_button4_nome) {
+        } else {
+            info_button4.nome=val.info_button4_nome;
+        }
+        $('#botao4').html(val.info_button4_nome);
+    });
+    chrome.storage.sync.get(['info_button4_url'], function(val) {
+        if(!val.info_button4_url) {
+        } else {
+            info_button4.url=val.info_button4_url;
+        }
+    });
+
 
 }
 
@@ -228,14 +273,36 @@ function load_buttons_information() {
 function set_buttons_information() {
 
 
-     var info = window.prompt("Insira nome para o botao1","Portal");
-
-     chrome.storage.sync.set({'info_button1_nome':info}, function() {
+    var info = window.prompt("Insira nome para o botao1","Portal");
+    chrome.storage.sync.set({'info_button1_nome':info}, function() {
     });
 
     info = window.prompt("Insira URL para o botao1","https://portal.uab.pt/");
-
     chrome.storage.sync.set({'info_button1_url':info}, function() {
+    });
+
+    info = window.prompt("Insira nome para o botao2","Moodle");
+    chrome.storage.sync.set({'info_button2_nome':info}, function() {
+    });
+
+    info = window.prompt("Insira URL para o botao2","https://elearning.uab.pt/");
+    chrome.storage.sync.set({'info_button2_url':info}, function() {
+    });
+
+    info = window.prompt("Insira nome para o botao3","Wiki");
+    chrome.storage.sync.set({'info_button3_nome':info}, function() {
+    });
+
+    info = window.prompt("Insira URL para o botao3","https://wiki.dcet.uab.pt/");
+    chrome.storage.sync.set({'info_button3_url':info}, function() {
+    });
+
+    info = window.prompt("Insira nome para o botao4","Rocket Chat");
+    chrome.storage.sync.set({'info_button4_nome':info}, function() {
+    });
+
+    info = window.prompt("Insira URL para o botao4","https://chat.estudarnauab.pt/home");
+    chrome.storage.sync.set({'info_button4_url':info}, function() {
     });
 
     load_buttons_information();

@@ -135,9 +135,9 @@ button.buttonlist {
     background-color: #55748E;
     border: none;
     color: white;
-    padding: 10px 40px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 10px;
 }
