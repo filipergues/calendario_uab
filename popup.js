@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //define handlers dos botoes
     $("#botao1").click(function(){
         window.open(info_button1.url,'_blank');
     });
@@ -12,6 +13,12 @@ $(document).ready(function () {
         window.open(info_button3.url,'_blank');
     });
     
+    //botao que redefine os nomes e url dos botões
+    $("#botao_redefinir").click(function(){
+        set_buttons_information();
+    });
+
+    load_buttons_information();
 
     // Substitui o ano no titulo html pela variavel ano do ucs.js
     document.getElementById("ano").innerHTML = ano;
@@ -195,3 +202,42 @@ function desactivarTitulo () {
         }
 }
 
+// Função que carrega a informação dos botões
+// caso não exista, mantem a informação por defeito
+function load_buttons_information() {
+
+    chrome.storage.sync.get(['info_button1_nome'], function(val) {
+        if (!val.info_button1_nome) {
+            info_button1.nome='Portal';
+        } else {
+            info_button1.nome=val.info_button1_nome;
+        }
+        $('#botao1').html(val.info_button1_nome);
+    });
+    chrome.storage.sync.get(['info_button1_url'], function(val) {
+        if(!val.info_button1_url) {
+            info_button1.url='https://portal.uab.pt/';
+        } else {
+            info_button1.url=val.info_button1_url;
+        }
+    });
+
+}
+
+// Funcao que define a informação dos botões
+function set_buttons_information() {
+
+
+     var info = window.prompt("Insira nome para o botao1","Portal");
+
+     chrome.storage.sync.set({'info_button1_nome':info}, function() {
+    });
+
+    info = window.prompt("Insira URL para o botao1","https://portal.uab.pt/");
+
+    chrome.storage.sync.set({'info_button1_url':info}, function() {
+    });
+
+    load_buttons_information();
+
+}
