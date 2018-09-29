@@ -21,7 +21,7 @@ var ucs_1_semestre = [
   ['21062','Gestão de Projetos Informáticos','11-02-2019','M','19-07-2019','M','3ºano','https://wiki.dcet.uab.pt/files/index.php/Gestão de Projetos Informáticos'],
   ['21103','Sistemas de Gestão de Bases de Dados','31-01-2019','T','12-07-2019','T','3ºano','https://wiki.dcet.uab.pt/files/index.php/Sistemas de Gestão de Bases de Dados'],
   ['21110','Sistemas Multimédia','22-02-2019','T','23-07-2019','M','3ºano','https://wiki.dcet.uab.pt/files/index.php/Sistemas Multimédia'],
-  ['21021','Computação Numérica','26-02-2019','T','16-07-2019','T','3ºano','https://wiki.dcet.uab.pt/files/index.php/Computação Numérica'],
+  ['21180','Computação Numérica (LEI)','26-02-2019','T','16-07-2019','T','3ºano','https://wiki.dcet.uab.pt/files/index.php/Computação Numérica'],
   ['21181','Segurança em Rede e Computadores','15-02-2019','T','31-07-2019','T','3ºano','https://wiki.dcet.uab.pt/files/index.php/Seguran%C3%A7a_em_Redes_e_Computadores']
 ];
 
